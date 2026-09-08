@@ -176,24 +176,45 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.car-header h1 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
+    gap: 25px;
+    margin: 30px 0 50px 0;
 }
 
-.gallery-grid img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
+.gallery-card {
+    background-color: #161b22;
     border: 1px solid #30363d;
-    transition: transform 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s;
 }
 
-.gallery-grid img:hover {
-    transform: scale(1.03);
+.gallery-card:hover {
+    transform: translateY(-4px);
+    border-color: #2f81f7;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-card p {
+    padding: 12px;
+    font-size: 0.95rem;
+    color: #8b949e;
+    font-weight: 500;
 }
 
 footer {

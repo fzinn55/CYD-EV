@@ -14,20 +14,58 @@
 
     <div class="car-detail-container">
         <a href="index.html" class="back-link">&larr; Voltar para a página inicial</a>
-        <h1>CYD Vision - Superesportivo</h1>
-        <p class="car-specs">Preço: <strong style="color:#3fb950">R$ 410.000</strong> | Autonomia: 600 km | 0 a 100 km/h: 2.9s</p>
-        <p>A máxima expressão de performance elétrica. O CYD Vision entrega aceleração impressionante e design aerodinâmico inspirado em veículos de competição.</p>
+        
+        <div class="car-header">
+            <h1>CYD Vision - Superesportivo</h1>
+            <p class="car-specs">Preço: <strong style="color:#3fb950">R$ 410.000</strong> | Autonomia: 600 km | 0 a 100 km/h: 2.9s</p>
+        </div>
+        
+        <p style="margin-top: 10px; color: #c9d1d9;">A máxima expressão de performance elétrica. O CYD Vision entrega aceleração impressionante e design aerodinâmico inspirado em veículos de competição.</p>
 
-        <h2 style="margin-top: 30px;">Galeria de Fotos</h2>
+        <h2 style="margin-top: 30px; margin-bottom: 15px;">Galeria de Fotos</h2>
         <div class="gallery-grid">
-            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&auto=format&fit=crop" alt="CYD Vision Esportivo">
-            <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&auto=format&fit=crop" alt="CYD Vision Vista Lateral">
-            <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&auto=format&fit=crop" alt="CYD Vision Faróis">
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&auto=format&fit=crop" alt="CYD Vision Esportivo">
+                <p>Vista Frontal / Aerodinâmica</p>
+            </div>
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&auto=format&fit=crop" alt="CYD Vision Vista Lateral">
+                <p>Linhas Laterais</p>
+            </div>
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&auto=format&fit=crop" alt="CYD Vision Faróis">
+                <p>Detalhe dos Faróis LED</p>
+            </div>
+        </div>
+
+        <!-- Seção do Botão e WhatsApp -->
+        <div class="contact-section">
+            <button class="btn-seller" onclick="abrirChat()">💬 Fale com o Vendedor</button>
+            <p class="whatsapp-info">Ou fale conosco pelo WhatsApp: <strong>(11) 98765-4321</strong></p>
+        </div>
+
+        <!-- Janela do Chat Flutuante -->
+        <div id="chat-box" class="chat-box">
+            <div class="chat-header">
+                <span>Atendimento CYD EV</span>
+                <button class="close-chat" onclick="fecharChat()">&times;</button>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="chat-message seller">
+                    Olá! Sou o consultor da CYD. Como posso te ajudar com o superesportivo CYD Vision?
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Digite sua mensagem..." onkeypress="verificarEnter(event)">
+                <button onclick="enviarMensagem()">Enviar</button>
+            </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 CYD - Construction Yours Dreams. Todos os direitos reservados.</p>
+        <p>&copy; 2026 CYD - Build Your Dreams. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

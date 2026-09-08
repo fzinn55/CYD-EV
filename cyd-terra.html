@@ -14,20 +14,58 @@
 
     <div class="car-detail-container">
         <a href="index.html" class="back-link">&larr; Voltar para a página inicial</a>
-        <h1>CYD Terra - SUV Elétrico</h1>
-        <p class="car-specs">Preço: <strong style="color:#3fb950">R$ 269.900</strong> | Autonomia: 520 km | Tração Integral AWD</p>
-        <p>Espaçoso, robusto e totalmente elétrico. O CYD Terra é ideal para longas viagens com a família garantindo máximo conforto e segurança em qualquer terreno.</p>
+        
+        <div class="car-header">
+            <h1>CYD Terra - SUV Elétrico</h1>
+            <p class="car-specs">Preço: <strong style="color:#3fb950">R$ 269.900</strong> | Autonomia: 520 km | Tração Integral AWD</p>
+        </div>
+        
+        <p style="margin-top: 10px; color: #c9d1d9;">Espaçoso, robusto e totalmente elétrico. O CYD Terra é ideal para longas viagens com a família garantindo máximo conforto e segurança em qualquer terreno.</p>
 
-        <h2 style="margin-top: 30px;">Galeria de Fotos</h2>
+        <h2 style="margin-top: 30px; margin-bottom: 15px;">Galeria de Fotos</h2>
         <div class="gallery-grid">
-            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&auto=format&fit=crop" alt="CYD Terra SUV">
-            <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&auto=format&fit=crop" alt="CYD Terra Traseira">
-            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&auto=format&fit=crop" alt="CYD Terra Detalhes">
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&auto=format&fit=crop" alt="CYD Terra SUV">
+                <p>Vista Frontal / Off-road</p>
+            </div>
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&auto=format&fit=crop" alt="CYD Terra Traseira">
+                <p>Design Traseiro</p>
+            </div>
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&auto=format&fit=crop" alt="CYD Terra Detalhes">
+                <p>Detalhes e Acabamento</p>
+            </div>
+        </div>
+
+        <!-- Seção do Botão e WhatsApp -->
+        <div class="contact-section">
+            <button class="btn-seller" onclick="abrirChat()">💬 Fale com o Vendedor</button>
+            <p class="whatsapp-info">Ou fale conosco pelo WhatsApp: <strong>(11) 98765-4321</strong></p>
+        </div>
+
+        <!-- Janela do Chat Flutuante -->
+        <div id="chat-box" class="chat-box">
+            <div class="chat-header">
+                <span>Atendimento CYD EV</span>
+                <button class="close-chat" onclick="fecharChat()">&times;</button>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="chat-message seller">
+                    Olá! Sou o consultor da CYD. Como posso te ajudar com o modelo CYD Terra?
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Digite sua mensagem..." onkeypress="verificarEnter(event)">
+                <button onclick="enviarMensagem()">Enviar</button>
+            </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 CYD - Construction Yours Dreams. Todos os direitos reservados.</p>
+        <p>&copy; 2026 CYD - Build Your Dreams. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

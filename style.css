@@ -217,6 +217,135 @@ nav a:hover {
     font-weight: 500;
 }
 
+/* Seção do Botão e WhatsApp */
+.contact-section {
+    text-align: center;
+    margin: 40px 0;
+    padding: 25px;
+    background-color: #161b22;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+}
+
+.btn-seller {
+    background-color: #2f81f7;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-seller:hover {
+    background-color: #1a62d6;
+    transform: scale(1.02);
+}
+
+.whatsapp-info {
+    margin-top: 15px;
+    color: #8b949e;
+    font-size: 1rem;
+}
+
+.whatsapp-info strong {
+    color: #3fb950;
+}
+
+/* Caixa de Chat Flutuante */
+.chat-box {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 320px;
+    height: 420px;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.chat-header {
+    background-color: #2f81f7;
+    color: #ffffff;
+    padding: 12px 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.close-chat {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.chat-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat-message {
+    max-width: 80%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.chat-message.seller {
+    background-color: #21262d;
+    color: #e6edf3;
+    align-self: flex-start;
+}
+
+.chat-message.user {
+    background-color: #238636;
+    color: #ffffff;
+    align-self: flex-end;
+}
+
+.chat-footer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #30363d;
+}
+
+.chat-footer input {
+    flex: 1;
+    padding: 8px;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 4px;
+    color: #ffffff;
+    outline: none;
+}
+
+.chat-footer button {
+    background-color: #238636;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 footer {
     text-align: center;
     padding: 30px;
